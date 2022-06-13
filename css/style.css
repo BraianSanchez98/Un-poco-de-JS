@@ -1,0 +1,107 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+header
+{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 
+{
+    color: rgb(255, 0, 0);
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-anchor: middle;
+}
+header h1 span
+{
+    font-size: 1.2em;
+    color: rgb(255, 0, 140);
+}
+header h2
+{
+    color: rgb(255, 0, 0);
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-anchor: middle;
+    animation: vision 10s linear ;
+}
+@keyframes vision
+{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+header h2 span
+{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 188px;
+    height: 2px;
+    animation: mover 3s linear;
+    opacity: 0;
+}
+@keyframes mover
+{
+    0%{
+        transform: translateY(0);
+        opacity: 100%;
+        
+    }
+    25%{
+        transform: translateY(10px);
+        opacity:  100%;
+    }
+    50%{
+        transform: translateY(20px);
+        opacity:  100%;
+        
+    }
+    100%{
+        transform: translateY(30px);
+        opacity: 100%;
+    }
+}
+
+header .logo
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: 10%;
+    top: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgb(255, 255, 255),
+                0 0 10px 5px rgb(255, 0, 0);
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
