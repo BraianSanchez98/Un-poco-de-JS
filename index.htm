@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/20210828_213715.jpg" alt="">
+      </div>
+      <div class="conteiner">
+        <h1><span>S</span>anchez <span> B</span>raian <span> A</span>riel</h1>
+        <h2><span></span> Developer web</h2>
+      </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="js/like_button.js"></script>
+    <script>
+      var relativeEl = document.querySelector('.logo');
+    relativeEl.style.transform = 'translateX(0)';
+
+    anime({
+      targets: '.logo',
+      translateX: {
+      value: '*=2.5',
+      duration: 0
+      },
+      width: {
+      value: '-=20px',
+      duration: 1800,
+      easing: 'easeInOutSine'
+      },
+      rotate: {
+      value: '+=1turn',
+      duration: 1800,
+      easing: 'easeInOutSine'
+      },
+      direction: 'alternate'
+  })
+    </script>
+  </body>
+</html>
